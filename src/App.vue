@@ -1,10 +1,10 @@
 <template>
   <div>
-    {{ count }} {{ object.foo }}
+    {{ count }} {{ object.name }}
     <button @click="increaseCapacity()">
       点击 count ++
     </button>
-    <div>count 的两倍{{object.double}}</div>
+    <div>count 的23倍{{object.double}}</div>
   </div>
 </template>
 
@@ -17,7 +17,7 @@
       const count = ref(10)
       // reactive，computed 使用
       const object = reactive({
-        count: 11,
+        name: 'sunseekers',
         double: computed(() => count.value *23)
     })
       // 方法
