@@ -11,11 +11,9 @@
   // 是放在export default 外面，其他的都是放在里面
   import { Component, Vue } from 'vue-property-decorator';
   import HelloWorld from './HelloWorld.vue';
-
   @Component({
-    components: {
-      HelloWorld,
-    },
+      HelloWorld
+    }
   })
   export default class Vue2 extends Vue {
     message:string ='Welcome to Your Vue2.js + TypeScript App 点击翻译 用到了子组件触发事件'
