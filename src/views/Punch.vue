@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <select-prop></select-prop>
     <tab @switchTab="switchTab"></tab>
     <search></search>
   </div>
@@ -9,6 +10,7 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component({
   components: {
+    SelectProp: () => import("@/components/SelectProp.vue"),
     tab: () => import("@/components/Tab.vue"),
     Search: () => import("@/components/Search.vue")
   }
