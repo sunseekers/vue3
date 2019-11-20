@@ -1,0 +1,26 @@
+.save {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  button {
+    border-width: 0;
+    width: 345px;
+    height: 44px;
+    background: #37ca7c;
+    outline: none;
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #fff6f6;
+    letter-spacing: -0.04px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 4px;
+    border-width: 0;
+  }
+}
